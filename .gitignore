@@ -7,15 +7,25 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependencies
+node_modules/
 
-# Editor directories and files
-.vscode/*
+# Build outputs
+dist/
+dist-ssr/
+build/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Editor and IDE files
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
@@ -23,5 +33,22 @@ dist-ssr
 *.sln
 *.sw?
 
+# OS-specific junk
+Thumbs.db
 
-src/assets/videos/hero_video.mp4
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Videos / heavy assets
+src/assets/videos/
+*.mp4
+*.mov
+*.avi
+
+# Misc
+*.zip
+*.tar
+*.rar
+*.7z
